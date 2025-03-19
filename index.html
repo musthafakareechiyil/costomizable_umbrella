@@ -6,9 +6,39 @@
     <title>Customize Umbrella</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  this is the body
-</body>
+    <div class="customizer">
+        <div class="umbrella-container">
+            <img id="umbrellaImage" src="Images&Icons/umbrella-yellow.png" alt="Umbrella">
+            <div id="loader" class="loader">
+                <img src="Images&Icons/loader_icon.svg" alt="Loading...">
+            </div>
+        </div>
 
+        <div class="controls">
+            <div>
+                <h1>Custom Umbrella</h1>
+                <div class="color-options">
+                    <button class="color-btn" data-color="yellow" style="background-color: yellow;"></button>
+                    <button class="color-btn" data-color="blue" style="background-color: #2bbdee;"></button>
+                    <button class="color-btn" data-color="pink" style="background-color: #df5c8c;"></button>
+                </div>
+
+                <h2>Customize your umbrella</h2>
+                <p class="medium-text">Upload a logo for an instant preview.</p>
+                <p class="small-text">.png and .jpg files only. Max file size is 5MB</p>
+                <div class="upload-section">
+                    <div onclick="document.getElementById('logoUpload').click()">
+                        <img src="Images&Icons/upload_icon.svg" alt="Upload Icon">
+                        <h3>UPLOAD LOGO</h3>
+                        <input type="file" id="logoUpload" accept="image/png, image/jpeg" style="display: none">
+                    </div>
+                    <h5 class="cross-button">X</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
